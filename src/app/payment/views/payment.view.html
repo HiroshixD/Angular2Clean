@@ -1,4 +1,6 @@
-  <div class="container-fluid"><!-- siempre se usa un contenedor antes de cualquier cosa, esto define un margen a la derecha y a la izquierda que al mismo tiempo es responsive, en este  caso como se va a trabajar el 100% del ancho se le agrega "-fluid" para que ocupe todo. si vas a trabajar normal, solo va container.-->
+  <div class="container-fluid">
+  <input type="hidden" id="end" [(ngModel)]="endHour">
+  <!-- siempre se usa un contenedor antes de cualquier cosa, esto define un margen a la derecha y a la izquierda que al mismo tiempo es responsive, en este  caso como se va a trabajar el 100% del ancho se le agrega "-fluid" para que ocupe todo. si vas a trabajar normal, solo va container.-->
 
     <div class="row"><!-- usar row para encasillar cualquier division de grillas, si bien visiblemente puede funcionar, cuando usas algunas otras herramientas como colapsables u otros no funcionanaran y no sabras xq-->
       <div class="col l12 center-align header">
@@ -108,7 +110,19 @@
 
 
 
+<div class="test">
+  <button (click)="requestLogin()">Login</button>
+  <button (click)="requestData()">REQ Data</button>
+</div>
 
-<button (click)="requestLogin()">Login</button>
-<button (click)="requestData()">REQ Data</button>
-<input type="hidden" id="end" [(ngModel)]="endHour">
+
+<div class="Formrequest" [hidden]=true>
+  <div class="row">
+    <div class="input-field col s6">
+      <input placeholder="Ingresa la cantidad deseada" value="" id="qty" type="text" class="validate">
+      <label class="active" for="qty">Cantidad de entradas</label>
+    </div>
+  </div>
+
+</div>
+

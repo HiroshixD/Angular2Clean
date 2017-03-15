@@ -8,7 +8,7 @@ import { AuthenticationService } from '../../authentication/services/authenticat
 })
 export class PaymentComponent {
 
-  private endHour = 'Mar 15, 2017 11:40:00';
+  private endHour = 'Mar 15, 2017 11:55:00';
 	private usuarios = {};
 	private _token = '';
 	private data = {
