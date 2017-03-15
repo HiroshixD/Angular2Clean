@@ -7,13 +7,7 @@ import 'rxjs/Rx';
 @Injectable()
 export class PaymentService {
 
-constructor(private http: Http, public authHttp: AuthHttp) { }
-
-  authentication(body) {
-     return this.http.post('http://devcheckout.joinnus.com/auth', body)
-       .map((response) => response.json());
-  }
-
+constructor(private http: Http) { }
 
   requestingData(body, token) {
      let headers = new Headers({ 'Authorization': 'Bearer ' + token });

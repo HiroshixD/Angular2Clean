@@ -9,9 +9,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
+//  Providers
+import { AuthenticationService } from '../../authentication/services/authentication.service';
 import { PaymentService } from '../../payment/services/payment.service';
 
+//  Components
 import { PaymentComponent } from '../../payment/components/payment.component';
+import { AuthenticationComponent } from '../../authentication/components/authentication.component';
+
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 //  Activar modo producción
@@ -20,7 +25,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
-    PaymentComponent
+    PaymentComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     RouterModule.forRoot(rootRouterConfig, { useHash: true })
   ],
   providers: [
-    PaymentService
+    PaymentService,
+    AuthenticationService
   ],
   bootstrap: [ AppComponent ]
 })
