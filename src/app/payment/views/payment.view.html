@@ -1,4 +1,114 @@
-<h3>Payment Component</h3>
-<p>Welcome to Angular Seed</p>
-<button (click)="login()">Login</button>
+  <div class="container-fluid"><!-- siempre se usa un contenedor antes de cualquier cosa, esto define un margen a la derecha y a la izquierda que al mismo tiempo es responsive, en este  caso como se va a trabajar el 100% del ancho se le agrega "-fluid" para que ocupe todo. si vas a trabajar normal, solo va container.-->
+
+    <div class="row"><!-- usar row para encasillar cualquier division de grillas, si bien visiblemente puede funcionar, cuando usas algunas otras herramientas como colapsables u otros no funcionanaran y no sabras xq-->
+      <div class="col l12 center-align header">
+        <div class="row">
+          <div class="col s6 l3 center-align sub_t">
+            <a href="#">
+              <h5 class="title">< REGRESAR AL EVENTO</h5>
+            </a>
+          </div>
+          <div class="col l3 offset-l6 hide-on-med-and-down">
+            <img id="logo" src="../assets/images/logo.png">
+          </div>
+          <div class="col s6 center-align hide-on-med-and-up p10">
+          <label class="timer"><i class="material-icons">av_timer</i></label>
+          <label class="timerout"></label>
+          <span class="timermin">min.</span>
+          <br/>
+          <span class="submessage">¡Tienes tiempo de sobra!</span>
+        </div>
+        </div>
+      </div>
+      <div class="col l12 center-align eventdetail">
+        <div class="col l2 offset-l1 s6 center-align imgevent" style="height: 80px;"> <!-- Elimine  el div "col s1" que estaba vacio, ya que para correr un div a la derecha sin contenido en la izquierda no es necesario colocar divs vacios, si no colocar la etiqueta offset-sX  dnde x=numero de columnas que deseas correr. -->
+          <img src="../assets/images/party.png">
+        </div>
+        <div class="col l5 s6 center-align imgevent t2" style="height: 80px;">
+          <span class="toptitle">Concierto en vivo del mejor grupo del momento</span><br />
+          <i class="material-icons" style="font-size: 18px">perm_contact_calendar</i>
+          <span class="sub-title">Miércoles 28 de Noviembre a las 18:00</span><br/>
+          <i class="material-icons" style="font-size: 18px">perm_contact_calendar</i>
+          <span class="sub-title">Calle Basadre 3456, San Isidro</span>
+        </div>
+        <div class="col l4 center-align hide-on-med-and-down"  style="height: 80px;">
+          <label class="timer"><i class="material-icons">av_timer</i></label>
+          <label class="timerout"></label>
+          <span class="timermin">min.</span>
+          <br/>
+          <span class="submessage">¡Tienes tiempo de sobra!</span>
+        </div> 
+      </div>
+      <div class="progress">
+        <div class="determinate" id="timeline"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col l7 offset-l1 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header paymethod" style="background-color: #ececed">Elige tu método de pago</div>
+            <div class="center-align bloque-pago">
+              <div class="row">
+                <div class="col l3 s12">
+                  <img src="../assets/images/pc-tarjeta.jpg">
+                </div>
+                <div class="col l4 s12 left-align"><h5>Paga con tarjeta de crédito o debito</h5>(El cobro se realizará en dolares)
+                </div>
+                <div class="col l5 s12"><a class="waves-effect waves-light btn">Pagar con tarjeta     </a></div>
+              </div>
+              <div class="row">
+                <div class="col l3 s12">
+                  <img src="../assets/images/dollar.png">
+                </div>
+                <div class="col l4 s12 left-align"><br/><h5>Depósito en efectivo</h5></div>
+                <div class="col l5 s12"><a class="waves-effect waves-light btn">Solicitar código de pago</a></div>
+              </div>
+              <div class="row">
+                <div class="col l3 s12">
+                  <img src="../assets/images/tubanco.png">
+                </div>
+                <div class="col l4 left-align"><h5>Paga en tu banca por internet</h5></div>
+                <div class="col l5 mcenter"><a class="waves-effect waves-light btn">Solicitar código de pago</a></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div> 
+      <div class="row">
+      <div class="col l4  s12 center-align details">
+        <div class="col detailresume">
+          <span class="bold">Resumen de compra</span>
+          <div class="items">
+            <br/>
+            <div class="qty">2 x Entrada General</div>
+            <div class="price">S/. 30.00</div>
+          </div>
+          <div class="items">
+            <br/>
+            <div class="qty">1 x VIP</div>
+            <div class="price">S/. 80.00</div>
+          </div>   
+          <div class="desc">
+            <br/>
+            <div class="dcto">Dcto. S/. 0.00</div>
+          </div>
+          <div class="totals">
+            <br/>
+            <div class="qty">Total</div>
+            <div class="price bold" style="font-size: 20px">S/. 110</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+<button (click)="requestLogin()">Login</button>
 <button (click)="requestData()">REQ Data</button>
+<input type="hidden" id="end" [(ngModel)]="endHour">

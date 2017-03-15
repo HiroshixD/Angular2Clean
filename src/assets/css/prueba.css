@@ -1,0 +1,289 @@
+.loguito {
+	font-weight: bold;
+	height: 50px;
+}
+
+.loguito img {
+	margin-left: 10%;
+    width: 60%;
+    padding-top: 20px;
+}
+
+.return {
+	padding-top: 30px;
+	padding-left: 40px;
+}
+
+.return-resp {
+	padding-top: 30px;
+	padding-left: 10px;	
+}
+
+.return-resp label{
+	font-size: 15px;
+}
+
+.return label{
+	font-size: 15px;
+}
+
+.header {
+	border-bottom: 1px solid #aaa;
+}
+
+.timer-resp {
+	padding-left: 70px;
+}
+
+.timer-resp label{
+	color:#6abda6;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.time-min {
+	color:#6abda6;
+}
+
+.loader {
+	position: absolute;
+    top: 184px;
+}
+
+.title {
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 1.5%;
+}
+
+.details {
+	padding-top: 4.8%;
+	padding-left: 1.5%;
+	color: #868789;
+}
+
+.address {
+	padding-left: 1.5%;
+	color: #868789;
+}
+
+.timer {
+	padding-top: 3%;
+	color: #6abda6;
+	font-weight: bold;
+	font-size: 38px;
+}
+
+.timer .min{
+	font-size: 15px;
+}
+
+.submessage {
+	font-size: 12px;
+	color: #868789;
+}
+
+.payment-container {
+	margin-top: 3%;
+}
+
+.payments {
+	font-weight: bold;
+	background-color:#ececed;
+}
+
+.info {
+	padding-left: 20px;
+}
+
+.paybutton {
+	padding-top: 10%;
+}
+
+
+.typepayment {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.btn {
+	background-color: #6abda6;
+	border-radius: 30px;
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 13px;
+	width: 110%;
+}
+
+
+.imgpayment img {
+	width: 80%;
+	height: 80%;
+}
+
+
+.detailpayment {
+	background-image: url(../images/ticket.png);
+	background-repeat: no-repeat;
+	height: 400px; 
+	margin-top: 13%; 
+	margin-left: 10%;
+}
+
+.detailpayment #titlepay {
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 2%;
+	margin-left: 17%;
+}
+
+.detailpayment:after {
+	content: '';
+    display: block;
+    width: 230px;
+    border-bottom: 2px solid #000;
+    border-color: #8d8b8d;
+    padding-top: 35px;
+    margin-left: 23px;
+}
+
+.qtyticket {
+	margin-left: 5%;
+	font-size: 14px;
+}
+
+.typeticket {
+	margin-left: 4%;
+	font-size: 14px;
+}
+
+.amountticket {
+	margin-left: 6%;
+	font-size: 14px;	
+}
+
+.items {
+	margin-top: 8%;
+	margin-left: 4%;
+}
+
+.items:after {
+	content: '';
+    display: block;
+    width: 230px;
+    border-bottom: 1px solid #000;
+    border-color: #8d8b8d;
+    padding-top: 10%;
+    margin-left: 5%;
+}
+
+.discount {
+	padding-top: 10%;
+	padding-left: 35%;
+}
+
+.discount:after {
+	content: '';
+    display: block;
+    width: 230px;
+    border-bottom: 5px solid #000;
+    border-color: #8d8b8d;
+    padding-top: 5%;
+    margin-left: -105%;
+}
+
+
+	.imagecontainer img {
+	width: 70%;
+	height: 70%;
+	padding-top: 10px;
+	margin-left: 38%;
+}
+
+
+
+
+
+@media (max-width: 767px) { /* celulares */
+.timer-resp {
+	padding-left: 50px;
+}
+
+.timer-resp label{
+	color:#6abda6;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.time-min {
+	color:#6abda6;
+	font-size: 12px;
+}
+
+.submessageresp {
+	font-size: 9px;
+}
+
+.loader {
+	position: absolute;
+    top: 123px;
+}
+
+}
+
+@media (max-width: 425px) { /* celulares */
+
+
+.title {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.details {
+    font-size: 10px;
+}
+
+.address {
+    font-size: 10px;
+}
+
+.imagecontainer img {
+    width: 100%;
+    padding-top: 10px;
+    margin-left: 0px;
+}
+
+
+.timer-resp {
+	padding-left: 2px;
+}
+
+.timer-resp label{
+	color:#6abda6;
+	font-size: 38px;
+	font-weight: bold;
+}
+
+.time-min {
+	color:#6abda6;
+	font-size: 12px;
+}
+
+.submessage {
+	font-size: 9px;
+	padding-bottom: 10px;
+}
+
+.loader {
+	position: absolute;
+    top: 180px;
+}
+
+
+}
+
+
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
